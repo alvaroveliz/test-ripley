@@ -53,6 +53,9 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: '#e75353',
             color: 'white',
         },
+        boxDescription: {
+            borderTop: '1px solid #DDD',
+        },
     }),
 );
 
@@ -144,7 +147,7 @@ const ProductCard: React.FC<Props> = ({ match }): React.ReactElement => {
                     </Grid>
                     <Grid container spacing={4} justify="center">
                         <Grid item lg={8}>
-                            <Box p={2}>
+                            <Box p={2} className={classes.boxDescription}>
                                 <Typography variant="overline">Descripción</Typography>
                                 <Typography variant="body2" className={classes.productDescription}>
                                     {renderHTML(product.longDescription)}
