@@ -83,7 +83,7 @@ const ProductCard: React.FC<Props> = ({ match }): React.ReactElement => {
         <>
             {product && (
                 <div>
-                    <Box p={2}>
+                    <Box p={4}>
                         <Breadcrumbs aria-label="breadcrumb">
                             <Link color="inherit" href="/">
                                 Catálogo
